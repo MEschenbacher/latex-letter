@@ -1,0 +1,64 @@
+\documentclass
+[
+  fontsize=12pt,
+  paper=a4,
+  parskip=half,
+  enlargefirstpage=on,    % More space on first page
+  fromalign=right,        % PLacement of name in letter head
+  fromphone=off,           % Turn on phone number of sender
+  fromrule=aftername,     % Rule after sender name in letter head
+  addrfield=on,           % Adress field for envelope with window
+  backaddress=on,         % Sender address in this window
+  subject=beforeopening,  % Placement of subject
+  locfield=narrow,        % Additional field for sender
+  foldmarks=on,           % Print foldmarks
+  numericaldate=on,
+  headsepline=on,	% Linie unter der Seitenzahl
+  firstfoot=on,
+]{scrlttr2}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[ngerman,num]{isodate}
+
+% for \blindtext
+\usepackage{blindtext}
+
+% Schrift cabin
+\usepackage[sfdefault]{cabin}
+
+\pagestyle{plain}
+
+\setkomafont{fromname}{\sffamily \large}
+\setkomafont{fromaddress}{\sffamily}%% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\bfseries}
+\setkomafont{backaddress}{\mdseries}
+
+\LoadLetterOption{DIN}
+\setkomavar{fromname}{__FROMNAME__}
+\setkomavar{fromaddress}{__FROMADDRESS__}
+\setkomavar{fromphone}{__FROMPHONE__}
+\setkomavar{fromemail}{__FROMEMAIL__}
+\setkomavar{backaddressseparator}{\enspace\textperiodcentered\enspace}
+\setkomavar{signature}{__SIGNATURE__}
+\setkomavar{place}{__PLACE__}
+\setkomavar{date}{__DATE__}
+\setkomavar{enclseparator}{: }
+\setkomavar{firstfoot}{__FIRSTFOOT__}
+\setkomavar{yourref}{__YOURREF__}
+\setkomavar{yourmail}{__YOURMAIL__}
+\setkomavar{customer}{__MEMBERIDENT__}
+
+\begin{document}
+\begin{letter}{__RECEIVER__}
+\setkomavar{subject}{__SUBJECT__}
+\opening{__OPENING__}
+
+\blindtext
+
+\Blindtext
+
+\closing{__CLOSING__}
+\end{letter}
+\end{document}
