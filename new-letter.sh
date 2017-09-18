@@ -193,7 +193,7 @@ m4 \
 	-D __YOURREF__="$yourref" \
 	-D __YOURMAIL__="$yourmail" \
 	-D __MEMBERIDENT__="$memberident" \
-	"$lettersource" >> "$targetfile"
+	"$lettersource" > "$targetfile"
 
 if [ "$open" = true ]; then
 	if [[ $EDITOR == *vim ]] || [[ $EDITOR == *vi ]]; then
