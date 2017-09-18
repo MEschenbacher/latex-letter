@@ -25,6 +25,8 @@ via environment variable `LETTERSOURCE`).
 
 # Requirements
 
+The script is written using `/bin/bash`.
+
 Packages `slugify`, `m4`, and `dmenu`. On Debian they are installed via `apt-get install
 slugify m4 dmenu`.
 
