@@ -36,3 +36,5 @@ slugify m4 dmenu`.
 - Copy the configuration `letter.conf.example` to `~/.letter.conf` and edit with your personal
 information.
 - Copy the latex template `letter.tex` to `~/.letter.tex`.
+- You also might want to change the `\usepackage[ngerman]{babel}` and
+  `\usepackage[ngerman]{isodate}` statements for your language.
