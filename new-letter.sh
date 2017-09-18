@@ -1,9 +1,6 @@
 #!/bin/bash -eu
 
-# requires slugify m4 dmenu
-
-# WHISHLIST
-# select letter body from previous files
+# https://github.com/MEschenbacher/latex-letter
 
 config=${LETTERCONFIG:-$HOME/.letter.conf}
 lettersource=${LETTERSOURCE:-$HOME/.letter.tex}
