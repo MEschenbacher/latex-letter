@@ -2,6 +2,9 @@
 
 # https://github.com/MEschenbacher/latex-letter
 
+# we are creating letters and an address history with personal information
+umask 077
+
 config=${LETTERCONFIG:-$HOME/.letter.conf}
 lettersource=${LETTERSOURCE:-$HOME/.letter.tex}
 histfile=${LETTERHISTFILE:-$HOME/.address_history}
