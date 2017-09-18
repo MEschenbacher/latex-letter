@@ -181,21 +181,21 @@ while : ; do
 done
 
 m4 \
-	-D __FROMNAME__="$fromname" \
-	-D __FROMADDRESS__="$fromaddress" \
-	-D __FROMPHONE__="$fromphone" \
-	-D __FROMEMAIL__="$fromemail" \
-	-D __SIGNATURE__="$signature" \
-	-D __PLACE__="$place" \
-	-D __DATE__="$date" \
-	-D __FIRSTFOOT__="$firstfoot" \
-	-D __RECEIVER__="$receiver" \
-	-D __SUBJECT__="$subject" \
-	-D __OPENING__="$opening" \
-	-D __CLOSING__="$closing" \
-	-D __YOURREF__="$yourref" \
-	-D __YOURMAIL__="$yourmail" \
-	-D __MEMBERIDENT__="$memberident" \
+	-D FROMNAME="$fromname" \
+	-D FROMADDRESS="$fromaddress" \
+	-D FROMPHONE="$fromphone" \
+	-D FROMEMAIL="$fromemail" \
+	-D SIGNATURE="$signature" \
+	-D PLACE="$place" \
+	-D DATE="$date" \
+	-D FIRSTFOOT="$firstfoot" \
+	-D RECEIVER="$receiver" \
+	-D SUBJECT="$subject" \
+	-D OPENING="$opening" \
+	-D CLOSING="$closing" \
+	-D YOURREF="$yourref" \
+	-D YOURMAIL="$yourmail" \
+	-D MEMBERIDENT="$memberident" \
 	"$lettersource" > "$targetfile"
 
 if [ "$open" = true ]; then
