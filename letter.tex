@@ -1,19 +1,18 @@
-\documentclass
-[
+\documentclass[
   fontsize=12pt,
   paper=a4,
   parskip=half,
-  enlargefirstpage=on,    % More space on first page
-  fromalign=right,        % PLacement of name in letter head
-  fromphone=off,           % Turn on phone number of sender
-  fromrule=aftername,     % Rule after sender name in letter head
-  addrfield=on,           % Adress field for envelope with window
-  backaddress=on,         % Sender address in this window
-  subject=beforeopening,  % Placement of subject
-  locfield=narrow,        % Additional field for sender
-  foldmarks=on,           % Print foldmarks
+  enlargefirstpage=on,
+  fromalign=right,
+  fromphone=off,
+  fromrule=aftername,
+  addrfield=on,
+  backaddress=on,
+  subject=beforeopening,
+  locfield=narrow,
+  foldmarks=on,
   numericaldate=on,
-  headsepline=on,	% Linie unter der Seitenzahl
+  headsepline=on,
   firstfoot=on,
 ]{scrlttr2}
 \usepackage[T1]{fontenc}
@@ -30,7 +29,7 @@
 \pagestyle{plain}
 
 \setkomafont{fromname}{\sffamily \large}
-\setkomafont{fromaddress}{\sffamily}%% statt \small
+\setkomafont{fromaddress}{\sffamily}
 \setkomafont{pagenumber}{\sffamily}
 \setkomafont{subject}{\bfseries}
 \setkomafont{backaddress}{\mdseries}
